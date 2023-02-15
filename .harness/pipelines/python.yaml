@@ -1,0 +1,15 @@
+name: Sample Pipeline_1676459710225
+stages:
+  - name: build
+    spec:
+      steps:
+        - name: docker_build
+          spec:
+            image: plugins/docker
+            with:
+              dry_run: true
+              repo: hello/world
+              tags: latest
+          type: plugin
+    type: ci
+version: 1
