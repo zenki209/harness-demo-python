@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_harness_demo_python_1692180118772-pr-trigger-input-set
+  identifier: Build_harness_demo_python_1692180118772prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: HarnessLearning
+  pipeline:
+    identifier: Build_harness_demo_python_1692180118772
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
